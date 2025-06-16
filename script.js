@@ -256,7 +256,7 @@ const dailyNumber = diffDays + 1;
         return ok ? '🟢' : hint ? '🟡' : '⚪️';
       }).join(' ')
     ).join('\n');
-    const text = `ZOGEDLE #${gameNumber}: ${guesses.length}/8\n\n${lines}\n\n🌐`;
+    const text = `ZOGEDLE #${dailyNumber}: ${guesses.length}/8\n\n${lines}\n\n🌐`;
     const shareData = { title:'ZOGEDLE', text, url:window.location.href };
     if (navigator.share) {
       navigator.share(shareData)
