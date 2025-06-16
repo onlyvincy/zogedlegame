@@ -47,7 +47,7 @@ function initRandomGame() {
 
   // Indice sicuro perché minuteKey < 9·10¹¹  <<  2^53
   const offset = ((parseInt(minuteKey,10) * 2654435761) >>> 0) % songs.length;
-  const index = ((parseInt(minuteKey, 10)*67)+ offset) % songs.length;
+  const index = ((parseInt(minuteKey, 10)*71)+ offset) % songs.length;
 
   daily      = songs[index];
   gameNumber = `MIN${minuteKey}`;   // es. MIN202506161342
