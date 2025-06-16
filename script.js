@@ -237,7 +237,7 @@ function cellClass(v, t, type = '') {
         return ok ? '🟢' : hint ? '🟡' : '⚪️';
       }).join(' ')
     ).join('\n');
-    const text = `ZOGEDLE #${gameNumber}: ${guesses.length}/8\n\n${lines}\n\n🌐 zogedle.xyz 🌐`;
+    const text = `ZOGEDLE #${gameNumber}: ${guesses.length}/8\n\n${lines}\n\n🌐`;
     const shareData = { title:'ZOGEDLE', text, url:window.location.href };
     if (navigator.share) {
       navigator.share(shareData)
