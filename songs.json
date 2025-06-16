@@ -32,10 +32,15 @@
   { "title": "BERNY BERNY",                              "album": "ZOGED MIXTAPE VOL.1", "track": 6, "duration": 180, "featuring": "Badis , Strallo , Arci" },
   { "title": "peccato che non era raggaeton freestyle",   "album": "ZOGED MIXTAPE VOL.1", "track": 7, "duration": 107, "featuring": "Strallo" },
   { "title": "BLUN7 A RUCCEJA",                          "album": "ZOGED MIXTAPE VOL.1", "track": 8, "duration": 110, "featuring": "Badis , Ciccio Delfo , Dottor P , Arci" },
-  { "title": "LAGO ROSSO",                               "album": "ZOGED MIXTAPE VOL.1", "track": 9, "duration": 142, "featuring": "Dottor P , Badis , Strallo , Arci , Vbox , Flan" }
+  { "title": "LAGO ROSSO",                               "album": "ZOGED MIXTAPE VOL.1", "track": 9, "duration": 142, "featuring": "Dottor P , Badis , Strallo , Arci , Vbox , Flan" },
 
 
+  { "title": "FERRAGOSTHO", "album": "FERRAGOSTHO", "track": 1, "duration": 148, "featuring": "SCXT" },
 
+  { "title": "FIGHT CLUB", "album": "FIGHT CLUB", "track": 1, "duration": 0, "featuring": "SCXT , Tyler , Badis" },
+
+  { "title": "FRANCESCA PESCE 2 (FISH AND SLIPS)", "album": "TARALLO EP", "track": 2, "duration": 76, "featuring": "Strallo" },
+  { "title": "DOTTOR STRALLO", "album": "TARALLO EP", "track": 1, "duration": 120, "featuring": "Strallo" }
 
 
 

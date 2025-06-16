@@ -300,3 +300,9 @@ th {
   font-size:8px !important;
   background-color: transparent !important;
 }
+
+
+
+#resultsTable th:nth-child(1), #resultsTable td:nth-child(1) {
+    white-space: normal !important;
+}
