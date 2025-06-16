@@ -82,7 +82,7 @@ body {
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
-  margin: 32px 0 0 0;
+  margin: 8px 0 0 0 !important;
 }
 #resultsTable th,
 #resultsTable td {
@@ -206,12 +206,13 @@ footer { text-align:center; margin-top:2rem; color:#888; }
   z-index: 1000;
   font-size: 12px;
 }
-x
+
 main {
   padding-top: 32px;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   justify-content: center;
+  
 
 }
 
@@ -280,4 +281,22 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (min-width: 900px) {
+  #logo{
+    
+    position: relative;
+    width: 58%;
+    left: 20%;
+    height: auto;
+    text-align: center;
+  }
+  
+  
+}
+
+th {
+  font-size:8px !important;
+  background-color: transparent !important;
 }
