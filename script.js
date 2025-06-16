@@ -3,6 +3,7 @@ let daily = null;
 let guesses = [];
 const MAX_GUESSES = 8;
 let gameNumber = 0;
+let dailynumber = 0; // quale #1,#2 è nello share
 
 window.addEventListener('DOMContentLoaded', () => {
   const songInput    = document.getElementById('songInput');
@@ -230,6 +231,24 @@ function cellClass(v, t, type = '') {
   }
 
   function shareResult() {
+    //data
+  // 1) Imposta la data di partenza (day-zero), es. oggi 16 giugno 2025.
+//    ATTENZIONE: in JS i mesi sono 0-based, quindi giugno = 5
+const startDate = new Date(2025, 5, 16);
+
+// 2) Prendi la data di oggi e “azzerala” a mezzanotte
+const today = new Date();
+today.setHours(0, 0, 0, 0);
+
+// 3) Calcola la differenza in millisecondi e trasformala in giorni
+const diffMs = today - startDate; 
+const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+// 4) Il tuo numero giornaliero è giorni trascorsi + 1
+const dailyNumber = diffDays + 1;
+
+
+//shareresult
     const lines = guesses.map(g =>
       ['track','duration','title','featuring'].map(f => {
         const ok   = g[f] === daily[f];
