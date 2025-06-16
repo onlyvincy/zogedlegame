@@ -1,0 +1,66 @@
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZOGEDLE</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+ <header>
+    <div class="topbanner">NEW ZOGED COMPANY GAME DROPPED WAKE UP</div>
+  </header>
+<body>
+ 
+
+  <main>
+  
+    <img src="/assets/Group 1.png" id="logo">
+
+   
+
+    <div class="controls">
+      <input
+        type="text"
+        id="songInput"
+        list="songsList"
+        placeholder="Scrivi il titolo della canzone..."
+        autocomplete="off"
+        style="display:block; width:100%;"
+      />
+      <datalist id="songsList"></datalist>
+      <div class="buttons">
+        <button type="button" id="newGameBtn">+ NUOVA PARTITA</button>
+        <button type="button" id="submitBtn">GUESS <span id="guessCount">1</span>/8</button>
+        
+      </div>
+    </div>
+
+    <table id="resultsTable">
+      <thead>
+        <tr>
+          <th>Song</th>
+          <th>Album</th>
+          <th>Track No.</th>
+          <th>Track Length</th>
+          <th>Features</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <!-- End-screen overlay -->
+    <div id="endScreen" class="overlay hidden">
+      <div class="overlay-content">
+        <h2 id="endTitle"></h2>
+        <p id="endMessage"></p>
+        <button type="button" id="shareBtn">Condividi</button>
+        <button type="button" id="retryBtn">Riprova</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Zogedle</p>
+  </footer>
+</body>
+</html>
