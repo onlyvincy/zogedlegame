@@ -66,7 +66,9 @@ function initRandomGame() {
 
   function setDailyByDate() {
     const key = new Date().toISOString().slice(0,10).replace(/-/g,'');
-    daily = songs[parseInt(key, 10) % songs.length];
+    const offset = ((parseInt(key,10) * 2654435761) >>> 0) % songs.length;
+    const index = ((parseInt(key, 10)*17*37)+ offset) % songs.length;
+    daily = songs[index];
   }
 
   function computeGameNumber() {
